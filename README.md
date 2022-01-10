@@ -32,7 +32,7 @@ $ cd simple-todo-app-with-bdd
 $ yarn start
 ```
 
-4. Run e2e tests
+4. Run e2e tests (run in new terminal tab)
 
 ```
 $ yarn e2e

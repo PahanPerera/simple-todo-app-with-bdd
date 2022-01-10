@@ -27,10 +27,6 @@ class TodoAppWorld extends World {
       .build();
   }
 
-  async wait() {
-    await this.driver.wait(() => {}, 5000);
-  }
-
   async getAddTodoInput() {
     return this.driver.findElement(By.name("addTodoInput"));
   }
