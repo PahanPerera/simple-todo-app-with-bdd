@@ -4,6 +4,7 @@ const params = {
   "--format": "html:coverage.html",
   "--world-parameters": {
     appUrl: "http://localhost:3000/",
+    headless: true,
   },
 };
 

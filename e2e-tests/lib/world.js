@@ -16,9 +16,14 @@ class TodoAppWorld extends World {
     setDefaultTimeout(10 * 1000);
     this.appUrl = this.parameters.appUrl;
     const service = new chrome.ServiceBuilder(chromedriver.path);
+    let chromeOptions = new chrome.Options();
+    if (this.parameters.headless) {
+      chromeOptions = chromeOptions.headless();
+    }
     this.driver = await new Builder()
       .forBrowser("chrome")
       .setChromeService(service)
+      .setChromeOptions(chromeOptions)
       .build();
   }
 
