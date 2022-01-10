@@ -37,3 +37,9 @@ $ yarn start
 ```
 $ yarn e2e
 ```
+
+5. Open test report
+
+```
+$ open e2e-report.html
+```

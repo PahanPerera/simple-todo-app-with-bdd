@@ -1,7 +1,7 @@
 const params = {
   "e2e-tests": "",
   "--publish-quiet": "",
-  "--format": "html:coverage.html",
+  "--format": "html:e2e-report.html",
   "--world-parameters": {
     appUrl: "http://localhost:3000/",
     headless: true,
